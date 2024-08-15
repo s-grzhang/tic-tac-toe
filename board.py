@@ -1,3 +1,5 @@
+# board.py
+
 class Board:
     def __init__(self):
         self.board = [[' ' for _ in range(3)] for _ in range(3)]
@@ -26,9 +28,6 @@ class Board:
 
     def is_draw(self):
         return all(self.board[row][col] != ' ' for row in range(3) for col in range(3))
-
-    def is_full(self):
-        return self.check_winner() or self.is_draw()
 
     def reset(self):
         self.board = [[' ' for _ in range(3)] for _ in range(3)]

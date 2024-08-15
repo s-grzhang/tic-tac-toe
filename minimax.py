@@ -1,3 +1,7 @@
+# minimax.py
+
+from board import Board
+
 class Minimax:
     def __init__(self, board, player):
         self.board = board
